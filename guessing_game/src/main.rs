@@ -17,7 +17,14 @@ fn main() {
             .read_line(&mut guess) // & is reference
             .expect("Failed to read line"); //expect err or ok from std::result::Result
     
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+//        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        }; 
+        // parse: return Result
+        //expect: crashing on an error
+        // match: handling the error
 
         println!("You guessed: {}", guess);
 
