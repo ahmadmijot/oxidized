@@ -23,6 +23,9 @@
       4. get element using indexing:
          ```let first = a[0];```
       5. use Vec if want to grow or shrink in size.
+5. Function parameter: must declare type.
+6. Statement: instruction to perform action & not return a value.
+7. Expression: eval to resulting value.
 
 6 Dec 2020:
 
