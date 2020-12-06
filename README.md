@@ -27,6 +27,12 @@
 6. Statement: instruction to perform action & not return a value.
 7. Expression: eval to resulting value.
 
+### Flow Control
+
+1. use ```for``` for most time than ```while``` to avoid error.
+2. range = ```a..b```
+3. ```rev``` reverse range: ```for number in (1..4).rev(){arg}```
+
 6 Dec 2020:
 
 1. Error handling:
