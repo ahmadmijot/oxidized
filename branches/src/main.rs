@@ -1,17 +1,15 @@
 fn main() {
-// ifelse();
-// conditional();
-// returnloop();
-// whileloop();
-//for_loop_using_while();
-//for_loop();
-countdown_for();
-
-
+    // ifelse();
+    // conditional();
+    // returnloop();
+    // whileloop();
+    //for_loop_using_while();
+    //for_loop();
+    countdown_for();
 }
 
 fn ifelse() {
-        let number = 6;
+    let number = 6;
 
     if number % 4 == 0 {
         println!("this number is divisible by 4");
@@ -26,10 +24,9 @@ fn ifelse() {
 
 fn conditional() {
     let condition = true;
-    let number = if condition {5} else {6};
+    let number = if condition { 5 } else { 6 };
 
     println!("the value of number is: {}", number);
-
 }
 
 fn returnloop() {
