@@ -26,6 +26,7 @@
 5. Function parameter: must declare type.
 6. Statement: instruction to perform action & not return a value.
 7. Expression: eval to resulting value.
+8. Format rust: cargo fmt
 
 ### Flow Control
 
