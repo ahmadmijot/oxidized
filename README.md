@@ -1,5 +1,11 @@
 # Oxidized: Rust Tutorial
 
+8 Dec 2020:
+
+1. String literal = hardcoded in stack
+2. String, unknown size, located at heap
+3. ```let s = String::from("string literal");``~~~~`
+
 7 Dec 2020:
 
 1. ```const``` use uppercase.
@@ -13,7 +19,7 @@
       1. ```let tup: (i32, f64, u8) = (500, 6.4, 1)```
       2. get element using destructuring:
          ```let tup...; let (...) = tup;```
-      1. get element using ```.```:
+      3. get element using ```.```:
          ```let x (500, 6.4, 1);```
          ```let five_hundred = x.0;```
    1. Arrays: fixed length, must have same type. Allocated on stack.
@@ -26,7 +32,7 @@
 5. Function parameter: must declare type.
 6. Statement: instruction to perform action & not return a value.
 7. Expression: eval to resulting value.
-8. Format rust: cargo fmt
+8. Format rust: cargo fmt\
 
 ### Flow Control
 
