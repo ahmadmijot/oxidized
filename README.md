@@ -1,5 +1,12 @@
 # Oxidized: Rust Tutorial
 
+9 Dec 2020:
+1. can only have one mut ref ```&mut```
+2. This to prevent data race. Data race = similar to a race cond and happens when:
+   1. Two or more pointers access the same data at the same time
+   2. At least one pointers is being used to write to the data.
+   3. No mechanism being used to sync access to data.
+
 8 Dec 2020:
 
 1. String literal = hardcoded in stack
