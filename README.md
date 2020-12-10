@@ -1,5 +1,9 @@
 # Oxidized: Rust Tutorial
 
+10 Dec 2020:
+1. Methods: like func, but defined within struct/enum/trait obj
+2. and first param is always ```self```.
+
 9 Dec 2020:
 1. can only have one mut ref ```&mut```
 2. This to prevent data race. Data race = similar to a race cond and happens when:
