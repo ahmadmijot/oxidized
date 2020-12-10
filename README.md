@@ -3,6 +3,10 @@
 10 Dec 2020:
 1. Methods: like func, but defined within struct/enum/trait obj
 2. and first param is always ```self```.
+3. Associate func: ```sq = Rectangle::square(4);```
+4. Associate func 
+   ```impl Rectangle { fn square(size: u32) -> Rectangle ```
+   ```Rectangle {width:size, height:size}}```
 
 9 Dec 2020:
 1. can only have one mut ref ```&mut```
