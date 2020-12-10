@@ -11,6 +11,19 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        //self.width > other.width && self.height > other.height
+        self.area() > other.area() //my code
+    }
+
+    //associated func, called by sq1 = Rectangle::square(23);
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size
+        }
+    }
 }
 
 fn main() {
@@ -18,11 +31,17 @@ fn main() {
         width: 30,
         height: 50,
     };
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
 
-    println!(
-        "The area of rect is {} square pixels",
-        rect1.area()
-    );
+    println!("can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+    println!("can rect1 hold rect3? {}", rect1.can_hold(&rect3));
 }
 
 //refactor using structs
