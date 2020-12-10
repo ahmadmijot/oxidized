@@ -1,8 +1,16 @@
-//refactor using structs
+// refactor using methods
 #[derive(Debug)]
+
 struct Rectangle {
     width: u32,
     height: u32,
+}
+
+//Method
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
 }
 
 fn main() {
@@ -12,17 +20,36 @@ fn main() {
     };
 
     println!(
-        // :? is debug, need annotation
-        // :#? is prettier than :?
-        "The rect is {:#?} and the area of the rect is {} square pixels",
-        rect1,
-        area(&rect1)
+        "The area of rect is {} square pixels",
+        rect1.area()
     );
 }
 
-fn area(rectangle: & Rectangle) -> u32 {
-    rectangle.width * rectangle.height
-}
+//refactor using structs
+// #[derive(Debug)]
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
+
+// fn main() {
+//     let rect1 = Rectangle {
+//         width: 30,
+//         height: 50,
+//     };
+
+//     println!(
+//         // :? is debug, need annotation
+//         // :#? is prettier than :?
+//         "The rect is {:#?} and the area of the rect is {} square pixels",
+//         rect1,
+//         area(&rect1)
+//     );
+// }
+
+// fn area(rectangle: & Rectangle) -> u32 {
+//     rectangle.width * rectangle.height
+// }
 
 
 //refactored with tuples
